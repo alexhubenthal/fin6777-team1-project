@@ -4,7 +4,7 @@ This is the FIN 6777 Group 1 prototype: an AI-enabled trading copilot that check
 
 ## Conventions
 
-- `pytest -q` must pass before any commit. The suite is fast (under a second).
+- `pytest -q` must pass before any commit. The suite is fast (a few seconds).
 - A new or changed rule needs four things in the same change: the check in `copilot/rules.py` (and a row in `RuleSet.as_rows()` if the user sets it), at least one scenario test in `tests/test_rules.py` with the arithmetic in a comment, a row in the rules table in `README.md`, and an entry in the numbered check list in `docs/architecture.md`.
 - The engine stays a pure function with no model call, no database and no network inside `evaluate()`. Explanations are built from the engine's numbers; a model may reword, never redecide.
 - The demo seed (`copilot/seed.py`) is what the class sees. Do not change its numbers in the week of a presentation; the deck's screenshots and speaker notes quote them.

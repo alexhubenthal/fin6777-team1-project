@@ -31,7 +31,7 @@ Streamlit prints a local URL; open http://localhost:8501 in your browser (the ap
 Tests:
 
 ```bash
-pytest -q        # 43 scenarios across the rule engine, journal, adherence score and broker adapter
+pytest -q        # 43 scenarios across the rule engine, journal, adherence score and broker adapter, plus an app smoke test
 ```
 
 ## The rules in this build

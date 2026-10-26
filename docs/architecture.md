@@ -74,7 +74,7 @@ Known simplification: an imported fill is checked against the account state at i
 
 ## Tests
 
-`pytest -q` runs 43 scenarios: every rule at its boundary, the review band, exits on plan inside the minimum hold, the cooldown clock, combined breaches and their ordering, booking a fill, realized P&L and the streak, adherence with outside fills, the broker adapters, and the explanation text matching the engine's numbers.
+`pytest -q` runs 43 scenarios: every rule at its boundary, the review band, exits on plan inside the minimum hold, the cooldown clock, combined breaches and their ordering, booking a fill, realized P&L and the streak, adherence with outside fills, the broker adapters, and the explanation text matching the engine's numbers. One more test compiles `app.py` and renders its default page, so a broken app script fails the suite.
 
 ## Security and regulation, as built
 

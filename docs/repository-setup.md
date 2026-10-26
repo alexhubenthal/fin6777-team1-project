@@ -10,7 +10,7 @@ cd fin6777-team1-project
 python -m venv .venv
 source .venv/bin/activate        # Windows PowerShell: .venv\Scripts\Activate.ps1   cmd: .venv\Scripts\activate.bat
 pip install -r requirements.txt
-pytest -q                        # expect: 43 passed
+pytest -q                        # expect: 44 passed
 streamlit run app.py             # then open http://localhost:8501 in your browser
 ```
 
