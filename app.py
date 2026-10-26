@@ -82,7 +82,8 @@ def md(text: str) -> str:
 def outcome_card(decision: Decision, text: str) -> None:
     color = OUTCOME_COLOR[decision.outcome]
     label = OUTCOME_LABEL[decision.outcome]
-        why_html = f'<p class="why">{why}</p>' if why else ""
+    why = WHY_IT_MATTERS.get(decision.headline_rule or "", "")
+    why_html = f'<p class="why">{why}</p>' if why else ""
     st.markdown(
         f'<div class="outcome" style="border-color:{color}">'
         f'<div class="label" style="color:{color}">{label}</div>'
