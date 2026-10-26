@@ -1,0 +1,6 @@
+streamlit>=1.40,<2
+sqlalchemy>=2.0,<3
+pandas>=2.2,<4
+pytest>=8.0,<10
+# Optional: live paper trading through Alpaca. Not required to run the prototype.
+# alpaca-py>=0.30
